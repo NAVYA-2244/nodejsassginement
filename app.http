@@ -1,0 +1,42 @@
+### 
+GET http://localhost:5000/
+
+###
+
+GET http://localhost:5000/users
+
+###
+
+POST http://localhost:5000/signup
+Content-Type: application/json
+
+{
+  "name": "Navaneetha",
+  "email": "nav@example.com",
+  "password": "12345"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "nav@example.com",
+  "password": "12345"
+}
+
+###
+
+PUT http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+  "name": "Navaneetha T",
+  "email": "navt@example.com",
+  "password": "67890"
+}
+
+###
+
+DELETE http://localhost:5000/users/1
